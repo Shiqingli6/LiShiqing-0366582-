@@ -1,0 +1,260 @@
+@charset "utf-8";
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Jockey One', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+/* Full width for header/nav/footer */
+.top-header,
+.navbar,
+footer {
+  width: 100%;
+  display: block;
+}
+
+/* Header */
+.top-header {
+  text-align: center;
+  padding: 40px 20px 20px;
+  background-color: #f9be45;
+}
+
+.logo {
+  width: 400px;
+  height: auto;
+}
+
+.top-header h1 {
+  margin: 10px 0 5px;
+  font-size: 2.5em;
+  color: #2e2e42;
+}
+
+.top-header p {
+  color: #333;
+  font-family: 'Jockey One', sans-serif;
+}
+
+.nav-decor {
+  width: 100%;
+  height: 12px; /* 调整粗细 */
+  background-color: #ff6600; /* 橙色 */
+}
+
+.navbar {
+  margin-top: 0;
+}
+
+/* Nav Bar */
+.navbar {
+  background-color: #2e2e42;
+  padding: 14px 0;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+/* Button Styling */
+.hover-button {
+  font-family: 'Jockey One', sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 14px 26px;
+  border-radius: 30px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.hover-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: left 0.3s ease;
+  z-index: 0;
+  border-radius: 30px;
+}
+
+.hover-button:hover::before {
+  left: 0;
+}
+
+.hover-button span {
+  position: relative;
+  z-index: 1;
+}
+
+/* Color Variants */
+.btn-dark {
+  background-color: #2e2e42;
+  color: white;
+}
+.btn-dark:hover {
+  background-color: #ff6600;
+}
+
+.btn-orange {
+  background-color: #ff6600;
+}
+.btn-orange:hover {
+  background-color: #ff8126;
+}
+
+.btn-gold {
+  background-color: #ff8126;
+  color: #f8f8f8;
+}
+.btn-gold:hover {
+  background-color: #ffd36b;
+  color: #f8f8f8;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #fff0e0;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 2.8em;
+  color: #2e2e42;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  font-family: "Junge", cursive;
+}
+
+/* CTA Button */
+.cta-btn {
+  font-family: "Jockey One", sans-serif;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 14px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  background-color: #ff6600;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: left 0.3s ease;
+  z-index: 0;
+  border-radius: 30px;
+}
+
+.cta-btn:hover {
+  background-color: #f9be45;
+  color: #2e2e42;
+}
+
+.cta-btn:hover::before {
+  left: 0;
+}
+
+.cta-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.form-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.form-section h2 {
+  color: #2e2e42;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #2e2e42;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Jockey One', sans-serif;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.cta-btn {
+  margin-top: 30px;
+  font-size: 1.1em;
+  padding: 14px 26px;
+  border-radius: 12px;
+  border: none;
+  background-color: #ff6600;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #f9be45;
+  color: #2e2e42;
+}
+
+
+/* Footer */
+footer {
+  background-color: #2e2e42;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  font-family: "Jockey One", sans-serif;
+}
